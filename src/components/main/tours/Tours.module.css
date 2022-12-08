@@ -1,0 +1,12 @@
+.section__tours {
+  padding: 20px;
+  text-align: center;
+}
+
+.tours__title {
+  margin: 0;
+}
+
+.tours__text {
+  padding: 0 50px;
+}

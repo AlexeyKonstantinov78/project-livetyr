@@ -1,0 +1,24 @@
+.overlay__product_item {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #808080;
+  border-radius: 15px;
+  margin-bottom: 10px;  
+}
+
+.overlay__productImg {
+  border-radius: 5px;
+  margin-right: 10px;  
+}
+
+.overlay__product_btn {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #808080;
+}

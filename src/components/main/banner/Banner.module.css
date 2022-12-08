@@ -1,0 +1,42 @@
+.section__banner {
+  background-image: url('../../../../public/img/banner-new.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 20px;
+  border-radius: 30px;
+  min-height: 150px;
+  text-align: left;
+  padding: 70px;
+
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner__decsription {
+  color: #fff;  
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.banner__btn {
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: rgb(4, 4, 223);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 20px 50px;
+  font-size: 20px;
+  transition: box-shadow 0.5s;
+}
+
+.banner__btn:hover {
+  box-shadow: 7px 9px 17px black;
+}

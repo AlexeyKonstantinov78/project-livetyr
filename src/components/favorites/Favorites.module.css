@@ -1,0 +1,48 @@
+.section__card_tours {
+  padding: 20px;
+  min-height: 80vh;
+}
+
+.card_tours_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.card__tours_title {
+  margin: 0;
+}
+
+.card__tours_search {
+  position: relative;
+  border: 1px solid transparent;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+
+.card__tours_search:hover {
+  border: 1px solid #0404df;
+}
+
+.card__tours_searchImg {
+  position: absolute;
+  margin-right: 10px;
+  top: 8px;
+  left: 8px;
+}
+
+.card__tours_searchInput {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 40px;
+  border-color: transparent;
+}
+
+.card__tours_items {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}

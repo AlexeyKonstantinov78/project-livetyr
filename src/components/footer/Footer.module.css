@@ -1,0 +1,32 @@
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: darkcyan;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.footer__title {
+  padding-left: 100px;
+  text-transform: uppercase;
+}
+
+.nav__items_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  text-align: left;  
+}
+
+.nav__items_footer{
+  font-size: 12px;
+}

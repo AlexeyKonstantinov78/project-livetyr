@@ -1,0 +1,97 @@
+.overlay {  
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.381);
+  z-index: 1;
+}
+
+.overlay__product {
+  position: absolute;
+  width: 600px;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.486);
+  padding: 0 50px;
+}
+
+.overlay__title {
+  text-align: left;
+  font-size: 25px;
+}
+
+.overlay__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: fit-content;
+  cursor: pointer;
+  background-color: aliceblue;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid rgb(177, 174, 174);
+  color: black;
+  padding: 10px 12px 10px 12px;
+}
+.overlay__product_flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 80vh;
+}
+
+.overlay__product_list {
+  overflow: auto;  
+}
+
+.overlay__total_price {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.overlay__total_price_p {
+  width: 50%;
+}
+
+.overlay__total_price_sum {
+  width: 50%;
+}
+
+.overlay__total_price_btn {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 10px;
+  background-color: darkblue;
+  border-color: transparent;
+  transition: all 0.5s;
+}
+
+.overlay__total_price_btn:hover {
+  box-shadow: 6px 7px 20px 0 black;
+  background-color: transparent;
+  color: black;
+  border: 1px solid darkblue;
+}
+
+button[disabled] {
+  background-color: #808080;
+}
+
+button[disabled]:hover {
+  background-color: #808080;
+  box-shadow:none;
+  color: #fff;
+  border: 1px solid #808080;
+  cursor:default;
+}
