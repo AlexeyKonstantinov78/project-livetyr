@@ -1,6 +1,6 @@
 /* eslint-disable prefer-const */
 /* eslint-disable arrow-body-style */
-import { URL } from './const';
+import { URL, URL2 } from './const';
 import axios from 'axios';
 
 export async function data(path) {
@@ -24,6 +24,15 @@ export async function dataPost(path, obj) {
 export async function deleteDataId(id, path = 'cart') {
   try {
     const data = await axios.delete(URL + `${path}/${id}`);
+    return data;
+  } catch (error) {
+    return error;
+  }
+}
+
+export async function formPost(obj) {
+  try {
+    const data = await axios.post(URL2, obj);
     return data;
   } catch (error) {
     return error;

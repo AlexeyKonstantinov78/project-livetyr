@@ -26,6 +26,7 @@
 }
 
 .banner__btn {
+  display: inline-block;
   border-radius: 20px;
   border-color: transparent;
   background-color: rgb(4, 4, 223);

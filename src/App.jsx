@@ -9,6 +9,7 @@ import React from 'react';
 import { data } from './util/mock';
 import { Routes, Route } from 'react-router-dom';
 import { Favorites } from './components/favorites/Favorites';
+import { Form } from './components/Form/Form';
 
 export const AppContext = React.createContext({});
 
@@ -61,6 +62,7 @@ function App() {
           <Routes>
             <Route path='/favorites' element={<Favorites />} />
             <Route path='/' element={<Main />} />
+            <Route path='/form' element={<Form />} />
           </Routes>
           <Footer />
         </div>
