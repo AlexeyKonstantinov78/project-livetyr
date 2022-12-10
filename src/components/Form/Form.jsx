@@ -1,11 +1,21 @@
+/* eslint-disable prefer-const */
 /* eslint-disable no-unused-vars */
 import style from './Form.module.css';
 import { useForm } from 'react-hook-form';
 import { formPost } from '../../util/mock';
 import { useState } from 'react';
+import CircleLoader from 'react-spinners/CircleLoader';
+
+const override = {
+  display: 'block',
+  margin: '0 auto',
+  borderColor: 'red',
+};
+
 
 export const Form = () => {
   const [responce, setResponce] = useState(false);
+  let [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -15,15 +25,20 @@ export const Form = () => {
     reset,
   } = useForm();
   const onSubmit = (data) => {
-    formPost(data).then((res) => {
-      console.log('res: ', res);
-      if (res.status === 201) {
-        setResponce(true);
-        reset(); // сброс данных формы
-      } else {
-        alert(res.message);
-      }
-    });
+    setLoading(true);
+    setTimeout(() => {
+      formPost(data).then((res) => {
+        console.log('res: ', res);
+        if (res.status === 201) {
+          setLoading(false);
+          setResponce(true);
+          reset(); // сброс данных формы
+        } else {
+          setLoading(false);
+          alert(res.message);
+        }
+      });
+    }, 1000);
   };
 
   return (
@@ -121,6 +136,12 @@ export const Form = () => {
           <button className={style.btn} type='submit'>
             Отправить
           </button>
+          <CircleLoader
+            color="#36d7b7"
+            loading={loading}
+            size={150}
+            cssOverride={override}
+          />
         </form>
       ) : (
           <div className={style.form__content}>
